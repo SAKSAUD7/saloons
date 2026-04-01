@@ -16,6 +16,7 @@ export interface SalonData {
   staff: Staff[];
   galleryImages: string[];
   testimonials: string[];
+  templateId: string;
 }
 
 const defaultData: SalonData = {
@@ -26,9 +27,10 @@ const defaultData: SalonData = {
   rating: "",
   mapLink: "",
   services: ["Haircut & Styling", "Facial & Cleanup", "Hair Coloring", "Beard Grooming", "Bridal Makeup", "Spa & Massage"],
-  staff: [{name: "Expert Stylist", role: "Hair Specialist"}, {name: "Beauty Expert", role: "Skincare Specialist"}],
+  staff: [{ name: "Expert Stylist", role: "Hair Specialist" }, { name: "Beauty Expert", role: "Skincare Specialist" }],
   galleryImages: [],
-  testimonials: []
+  testimonials: [],
+  templateId: "noir-gold",
 };
 
 export function useSalonData() {
@@ -48,7 +50,7 @@ export function useSalonData() {
   }, []);
 
   const save = (newData: Partial<SalonData>) => {
-    const merged = { ...data, ...defaultData, ...newData } as SalonData;
+    const merged = { ...defaultData, ...data, ...newData } as SalonData;
     localStorage.setItem('salonData', JSON.stringify(merged));
     setData(merged);
   };

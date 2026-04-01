@@ -12,8 +12,17 @@ import Booking from "@/pages/booking";
 import Contact from "@/pages/contact";
 import { useEffect } from "react";
 import { useSalonData } from "@/lib/useSalonData";
+import { applyTemplate, DEFAULT_TEMPLATE_ID } from "@/lib/templates";
 
 const queryClient = new QueryClient();
+
+function ThemeApplier() {
+  const { data } = useSalonData();
+  useEffect(() => {
+    applyTemplate(data?.templateId ?? DEFAULT_TEMPLATE_ID);
+  }, [data?.templateId]);
+  return null;
+}
 
 function ProtectedRoute({ component: Component, ...rest }: any) {
   const { data, loading } = useSalonData();
@@ -51,6 +60,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+          <ThemeApplier />
           <Router />
         </WouterRouter>
         <Toaster />
