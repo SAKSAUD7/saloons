@@ -1,11 +1,10 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "Hn4PiDYdIk8RCNA6GHbpi"
 uri = "file://artifacts/salon-generator/src/assets/hero-bg.png"
 type = "image"
-title = "Hero background for luxury salon"
+title = "Luxury beauty salon interior"
 
 [[generated]]
 id = "ih8jjteEGW-whTTmLKJ-x"
@@ -17,4 +16,82 @@ title = "Gallery placeholder collage"
 id = "iEDWaNPiE41M1jgrVK9ut"
 uri = "file://artifacts/salon-generator/src/assets/about-bg.png"
 type = "image"
-title = "About page stylist at work"
+title = "Hair stylist working in upscale salon"
+
+[[generated]]
+id = "4J6XAluCcR8hm8b_xpXVm"
+uri = "file://artifacts/salon-generator/src/assets/gallery-1.png"
+type = "image"
+title = "Professional hair coloring balayage"
+
+[[generated]]
+id = "lNIpiQwecStFLhxgonLPb"
+uri = "file://artifacts/salon-generator/src/assets/gallery-2.png"
+type = "image"
+title = "Bridal makeup transformation"
+
+[[generated]]
+id = "sRJxJnOr3t4QHc_SpGB_I"
+uri = "file://artifacts/salon-generator/src/assets/gallery-3.png"
+type = "image"
+title = "Mens grooming beard trim"
+
+[[generated]]
+id = "YMd5noCMpDHJphGd61QL1"
+uri = "file://artifacts/salon-generator/src/assets/gallery-4.png"
+type = "image"
+title = "Facial treatment skincare"
+
+[[generated]]
+id = "M8sMdgEJ7sn3EkfDw-LC5"
+uri = "file://artifacts/salon-generator/src/assets/gallery-5.png"
+type = "image"
+title = "Hair spa treatment"
+
+[[generated]]
+id = "QZzDnl2oiVNzZnZJyFjrW"
+uri = "file://artifacts/salon-generator/src/assets/gallery-6.png"
+type = "image"
+title = "Nail art manicure pedicure"
+
+[[generated]]
+id = "QqeMSLZZJLPjt7Q2eNlFv"
+uri = "file://artifacts/salon-generator/src/assets/service-hair.png"
+type = "image"
+title = "Hair cutting styling"
+
+[[generated]]
+id = "7cIlnqDHf8Hv6YznnCvLm"
+uri = "file://artifacts/salon-generator/src/assets/service-skin.png"
+type = "image"
+title = "Facial skincare treatment"
+
+[[outputs]]
+id = "-dqGkXs-9haCPC_cMmmiO"
+uri = "file://artifacts/salon-generator/src/assets/service-bridal.png"
+type = "image"
+title = "Bridal makeup artist working on bride, golden lighting"
+
+[[outputs]]
+id = "yuDIx9WVjevN9qXQMxciM"
+uri = "file://artifacts/salon-generator/src/assets/team-1.png"
+type = "image"
+title = "Professional female hair stylist portrait, confident"
+
+[[outputs]]
+id = "mTZpAth6ZqN9Jr0WYD-6m"
+uri = "file://artifacts/salon-generator/src/assets/team-2.png"
+type = "image"
+title = "Professional male barber portrait, groomed beard"
+
+[[outputs]]
+id = "5IkOWhLADFtrBf524nq3_"
+uri = "file://artifacts/salon-generator/src/assets/team-3.png"
+type = "image"
+title = "Professional female makeup artist portrait"
+
+[[outputs]]
+id = "Ec-Rokw3_ejbg1jHJOtai"
+uri = "file://artifacts/salon-generator/src/assets/cta-bg.png"
+type = "image"
+title = "Luxury salon interior overhead view, black marble floor"
