@@ -3,7 +3,7 @@ import { Layout } from '../components/layout/Layout';
 import { useSalonData } from '@/lib/useSalonData';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { Link } from 'wouter';
-import { ChevronRight, Star, Quote, Scissors, Sparkles, Droplets, Heart, ShieldCheck, Award } from 'lucide-react';
+import { ChevronRight, Star, Quote, Scissors, Sparkles, Droplets, Heart, ShieldCheck, Award, Phone } from 'lucide-react';
 import heroBg from '../assets/hero-bg.png';
 import aboutBg from '../assets/about-bg.png';
 import serviceHair from '../assets/service-hair.png';
