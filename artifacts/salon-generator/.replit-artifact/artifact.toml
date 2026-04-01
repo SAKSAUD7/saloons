@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Beauty Salon Website Generator"
+version = "1.0.0"
+id = "artifacts/salon-generator"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24167
+
+[services.development]
+run = "pnpm --filter @workspace/salon-generator run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/salon-generator", "run", "build" ]
+publicDir = "artifacts/salon-generator/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24167"
+BASE_PATH = "/"

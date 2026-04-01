@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Hn4PiDYdIk8RCNA6GHbpi"
+uri = "file://artifacts/salon-generator/src/assets/hero-bg.png"
+type = "image"
+title = "Hero background for luxury salon"
+
+[[generated]]
+id = "ih8jjteEGW-whTTmLKJ-x"
+uri = "file://artifacts/salon-generator/src/assets/gallery-placeholder.png"
+type = "image"
+title = "Gallery placeholder collage"
+
+[[generated]]
+id = "iEDWaNPiE41M1jgrVK9ut"
+uri = "file://artifacts/salon-generator/src/assets/about-bg.png"
+type = "image"
+title = "About page stylist at work"

@@ -1,0 +1,304 @@
+Build a FULLY AUTOMATED, PRODUCTION-READY Beauty & Unisex Salon Website Generator.
+
+The system should allow me to:
+
+1. Paste raw scraped salon data
+2. Upload salon images
+3. Click a button
+4. Instantly generate a complete premium salon website
+
+NO manual coding or editing should be required after generation.
+
+========================
+TECH STACK
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- Use localStorage (MANDATORY)
+- Use FileReader API for image handling
+
+========================
+MAIN ENTRY PAGE
+
+Create:
+👉 generator.html
+
+========================
+GENERATOR PAGE UI
+
+Include:
+
+1. Title:
+   "Salon Website Generator"
+
+2. Textarea:
+   Placeholder:
+   "Paste Salon Data Here (Name | Rating | Address | Phone | Map Link)"
+
+3. Image Upload Section:
+   
+   - Input type="file"
+   - Allow multiple image uploads
+   - Accept only images
+   - Show preview thumbnails before generating
+
+4. Buttons:
+   
+   - "Generate Website"
+   - "Reset"
+
+========================
+DATA PARSING LOGIC
+
+When "Generate Website" is clicked:
+
+Parse input text and extract:
+
+- salonName (first text)
+- rating (number if exists)
+- address (text portion)
+- phone (digits only)
+- mapLink (URL if present)
+
+Clean phone number and convert to WhatsApp format:
+Example:
+9876543210 → 919876543210
+
+========================
+IMAGE HANDLING
+
+- Read uploaded images using FileReader
+- Convert images to Base64
+- Store in array:
+  galleryImages: [base64image1, base64image2...]
+
+========================
+DATA STRUCTURE
+
+Create object:
+
+{
+salonName: "",
+phone: "",
+whatsapp: "",
+address: "",
+rating: "",
+mapLink: "",
+services: [
+"Haircut & Styling",
+"Facial & Cleanup",
+"Hair Coloring",
+"Beard Grooming",
+"Bridal Makeup",
+"Spa & Massage"
+],
+staff: [
+{
+name: "Expert Stylist",
+role: "Hair Specialist"
+},
+{
+name: "Beauty Expert",
+role: "Skincare Specialist"
+}
+],
+galleryImages: [],
+testimonials: []
+}
+
+========================
+TESTIMONIAL GENERATION
+
+Auto-generate based on rating:
+
+If rating >= 4:
+
+- "Amazing experience and professional staff"
+- "Highly recommended salon"
+
+Else:
+
+- "Good service and friendly environment"
+
+========================
+STORE DATA
+
+Save object in:
+👉 localStorage with key "salonData"
+
+========================
+REDIRECT
+
+After saving:
+👉 Redirect to index.html
+
+========================
+WEBSITE PAGES
+
+Create:
+
+- generator.html (input page)
+- index.html (home)
+- about.html
+- services.html
+- gallery.html
+- booking.html
+- contact.html
+
+========================
+GLOBAL FEATURE (IMPORTANT)
+
+Add a button on ALL pages:
+
+👉 "Create New Website"
+
+- Position: top-right OR navbar
+- Action: redirect to generator.html
+
+========================
+HOMEPAGE DESIGN (VERY IMPORTANT)
+
+Hero Section:
+
+- Full-width background image (salon related)
+
+- Dark overlay
+
+- Salon Name (large heading from data)
+
+- Tagline:
+  "Style • Beauty • Confidence"
+
+- CTA Buttons:
+  
+  - Book Appointment
+  - WhatsApp
+
+Sections:
+
+- Services preview
+- Staff section
+- Testimonials slider
+- CTA banner
+
+========================
+DYNAMIC SYSTEM (MANDATORY)
+
+ALL pages must load data from localStorage.
+
+NO hardcoded content allowed.
+
+Dynamically render:
+
+- Salon name
+- Phone number
+- Address
+- Services
+- Staff
+- Testimonials
+- Gallery images
+
+========================
+GALLERY PAGE (IMPORTANT)
+
+- Load images from localStorage.galleryImages
+- Display in responsive grid
+- Add hover zoom effect
+
+If no images:
+
+- Show placeholder salon images
+
+========================
+BOOKING PAGE
+
+Form fields:
+
+- Name
+- Phone
+- Service dropdown
+- Date
+
+On submit:
+
+- Open WhatsApp with prefilled message:
+  "Hi, I want to book a service at [Salon Name]"
+
+========================
+CONTACT PAGE
+
+- Show:
+  
+  - Phone
+  - Address
+  - Email (dummy if not available)
+
+- Embed Google Map (if mapLink exists)
+
+========================
+WHATSAPP FEATURE
+
+- Floating WhatsApp button on all pages
+- Opens chat with stored number
+
+========================
+SMART CONDITIONS
+
+- If no phone → disable call/WhatsApp
+- If no rating → hide testimonials
+- If no map → hide map section
+- If no images → show placeholders
+
+========================
+UI DESIGN (VERY IMPORTANT)
+
+- Premium salon style
+- Colors:
+  Black + Gold OR Pink + White gradient
+- Elegant fonts
+- Soft shadows
+- Smooth animations
+- Modern luxury look
+
+========================
+NAVIGATION
+
+- Sticky navbar
+- Mobile responsive hamburger menu
+- Smooth scrolling
+
+========================
+FOLDER STRUCTURE
+
+/generator.html
+/index.html
+/about.html
+/services.html
+/gallery.html
+/booking.html
+/contact.html
+
+/css/style.css
+/js/main.js
+
+========================
+BONUS FEATURES
+
+- Image preview before generating
+- Reset button clears localStorage
+- Clean commented code
+- Fast loading
+
+========================
+FINAL GOAL
+
+1. Open generator.html
+2. Paste salon data
+3. Upload images
+4. Click Generate Website
+5. Instantly get a premium salon website
+6. Use "Create New Website" to repeat for next client
+
+========================
+END
