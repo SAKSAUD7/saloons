@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Layout } from '../components/layout/Layout';
 import { useSalonData } from '@/lib/useSalonData';
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useAnimation, useInView, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 import { ChevronRight, Star, Quote, Scissors, Sparkles, Droplets, Heart, ShieldCheck, Award, Phone } from 'lucide-react';
 import heroBg from '../assets/hero-bg.png';
